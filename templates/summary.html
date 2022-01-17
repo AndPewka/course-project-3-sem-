@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/main.css">
+
+    <title>Резюме</title>
+</head>
+<body>
+  <div class="AddVac" style="display:none">
+    <button class="close">Закрыть</button>
+      <form action="" method="post">
+        <div class="listEnter">
+        <label>Фамилия </label><input type="text" placeholder="Фамилия" name="first_name">
+        <label>Имя </label><input type="text" placeholder="Имя" name="last_name">
+        <label>Отчество </label><input type="text" placeholder="Отчество" name="patronymic">
+        <label>Телефон для связи </label><input type="text" placeholder="Телефон для связи" name="phone">
+        <label>Специальность </label><input type="text" placeholder="Специальность" name="speciality"> 
+        <label>Доп. информация </label> <input type="text" placeholder="Дополнительная информация" name="diff">
+        </div>
+      <button class="send" type="submit">Добавить резюме</button>
+    </form>
+  </div>
+
+
+
+    <div class="main">
+        <header class="header">
+            <a href="profile"><div class="cHeader">Профиль</div></a>
+            <a href="vacancies"><div class="cHeader">Вакансии</div></a>
+            <a href="summary"><div class="cHeader" style="background-color: lightcoral;">Резюме</div></a>
+            <a href="clear"><div class="cHeader">Выход</div></a>
+
+          </header>
+          <div class="error">{{message}}</div>
+          <div class="listVac">
+
+            {% for summ in summaries %}
+            <table class="Vac" data-id="{{summ.hash}}">
+              <tr>
+                <td colspan="2">Объявление {{summaries.index(summ) + 1}}
+                  {% if token == summ["creator"] %}
+                  <button class="delete_list">Удалить</button>
+                  <button class="pass_del_summ" style="display:none">Подтвердить</button>
+                {% endif%}
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="2">
+                  {{summ["first_name"]}}<br>
+                  {{summ["last_name"]}}<br>
+                  {{summ["patronymic"]}}<br>
+                  {{summ["phone"]}}<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="line">
+                  Специализация: {{summ["speciality"]}}
+                  <hr>
+                  Доп. информация: {{summ["diff"]}}
+                </td>
+              </tr>
+            </table>
+      {% endfor %}
+
+          </div>  
+      <button class="bAddVac">Добавить</button>
+    </div>
+
+    <script src="static/js/main.js" type="text/javascript"></script>
+
+    
+</body>
+</html>

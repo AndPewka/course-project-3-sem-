@@ -1,0 +1,125 @@
+a{
+    text-decoration: none;
+  }
+
+
+div.error{
+  text-align: center;
+  border-radius: 100px;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 0, 0, 0.267);
+  color: red;
+  width: 80%;
+}
+
+td.line{
+  padding-left:25px;
+  text-align:start;
+  width: 75%;
+}
+
+div.listVac{
+  height: 90%;
+  overflow-y: scroll;
+}
+
+table.info{
+  width: 100%;
+}
+
+body{
+	background-color: #abcdef;
+	font-size:24px;
+	color:grey;
+	font-family: Monospace,sans-serif;
+}
+
+div.main{
+  position: relative;
+  border: solid blue 3px;
+  background-color: lightskyblue;
+  margin:auto;
+  margin-top:100px;
+  width: 50%;
+  height: 500px;
+}
+
+header.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+div.cHeader{
+    
+    border-radius: 100px;
+    text-align: center;
+    background-color: rgb(0, 157, 255);
+  }
+
+button.bAddVac{
+  font-size: 24px;
+  text-align: center;
+  z-index: 1;
+  bottom: 25px;
+  right: 25px;
+  position: absolute;
+  background-color: red;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  line-height: 120px;
+}
+
+table.Vac{
+  
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  background-color: lightgrey;
+  width: 100%;
+  height: 100px;
+}
+td{
+  text-align: center;
+  margin:0px;
+  padding: 0px;
+  border: solid black 1px;
+}
+div.AddVac{
+  padding: 2%;
+  background-color: rgb(240, 86, 124);
+  left: 35%;
+  z-index: 2;
+  position: fixed;
+  width: 28%;
+}
+
+div.listEnter{
+  margin:0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-row-gap: 10px;
+
+}
+button.send{
+  margin-top:25px;
+  margin-left: auto;
+  margin-right:auto;
+  width: 50%;
+}
+button.close{
+  float: right;
+}
+
+input{
+  width: 100%;
+  height: 64px;
+  font-size: 24px;
+}
+
+
+
+

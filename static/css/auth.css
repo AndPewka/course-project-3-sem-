@@ -1,0 +1,95 @@
+a{
+  text-decoration: none;
+}
+
+body{
+	background-color: #abcdef;
+	font-size:24px;
+	color:grey;
+	font-family: Monospace,sans-serif;
+}
+
+
+div.cHeader{
+  border-radius: 100px;
+  text-align: center;
+  background-color: rgb(0, 157, 255);
+}
+
+div.error{
+  text-align: center;
+  border-radius: 100px;
+  margin-top:20px;
+  margin-bottom:20px;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 0, 0, 0.267);
+  color: red;
+  width: 80%;
+}
+div.auth{
+  border: solid blue 3px;
+  background-color: lightskyblue;
+  
+  margin:auto;
+  margin-top:100px;
+
+  width: 30%;
+  height: 500px;
+  
+}
+
+
+header.header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+div.entAuth{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top:25px;
+}
+
+
+
+div.entReg input,div.entAuth input{
+  width: 80%;
+  border: 0px;
+  border-radius: 10px;
+  outline: none;
+  height: 30px;
+  margin-bottom: 15px;
+}
+div.entReg button,div.entAuth button{
+  width: 40%;
+}
+
+button.donat{
+  width: 100%;
+}
+
+
+
+div.entReg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top:25px;
+
+}
+
+button.btn{
+  font-size:20px;
+  height: 50px;
+}
+
+
+.clear{
+  display: none;
+}

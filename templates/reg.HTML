@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/auth.css">
+  <title>Регистрация</title>
+</head>
+<body>
+  
+
+  <div class="auth">
+    <header class="header">
+      <a href="auth"><div class="cHeader">Вход</div></a>
+      <a href="reg"><div class="cHeader" style="background-color: lightcoral;">Регистрация</div></a>
+    </header>
+    <div class="error">{{message}}</div>
+    <form action="#" method="post" >
+      <div class="entReg">
+        <input type="text" placeholder="Номер" name="phone"> 
+        <input type="text" placeholder="Фамилия" name="last_name"> 
+        <input type="text" placeholder="Имя" name="first_name"> 
+        <input type="text" placeholder="Отчество" name="patronymic"> 
+        <input type="password" placeholder="Пароль" name="password">
+        <input type="password" placeholder="Подтверждение пароля" name="confirm_password"> 
+        <button class="btn" type="submit">Зарегистрироваться</button>
+      </div>
+  </form>
+  </div>
+
+
+  <script src="static/js/test.js" type="text/javascript"></script>
+
+  
+</body>
+</html>
